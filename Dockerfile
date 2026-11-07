@@ -5,6 +5,7 @@ ENV PYTHONUNBUFFERED=1
 ENV MALLOC_ARENA_MAX=2
 ENV LANG=en_US.UTF-8
 ENV PATH="/app/.venv/bin:$PATH"
+ENV UV_PYTHON=3.12
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
